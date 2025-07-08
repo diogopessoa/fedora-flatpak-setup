@@ -71,3 +71,11 @@ gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'
 echo -e "\n🧼 Cleaning up..."
 flatpak update -y
 dnf autoremove -y
+dnf clean all
+
+# Finalização
+echo ""
+echo "=============================================="
+echo "✅ Processo concluído com sucesso!"
+echo "🔁 Reinicie o sistema para aplicar todas as alterações."
+echo "=============================================="
