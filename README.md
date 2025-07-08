@@ -91,22 +91,24 @@ Pronto! Se tudo deu certo você receberá a mensagem "✅ Processo concluído co
 
 # 🔨 Instalação Manual (opcional alternativa)
 
-## 1. Desinstale os aplicativos RPM no GNOME Software 
-Abra o GNOME Software (Programas) e vá até 'Instalados', e remova os aplicativos RPM manualemente.
+## 1. Desinstalar os aplicativos RPM no GNOME Software 
+- Abra o GNOME Software (Programas)
+  - clique em 'Instalados'
+  - remova os aplicativos RPM manualemente
 
-Verificar se o repositório Flathub está habilitado:
+## 2. Verificar se o repositório Flathub está habilitado:
 
-## 1. Habilitar o Flathub
+- Habilitar o Flathub
 ```bash
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-## 2. Priorizar Flatpak (Flathub) para GNOME Software
+- Priorizar Flatpak (Flathub) para GNOME Software
 ```bash
 sudo flatpak remote-modify --system --prio=1 flathub
 ```
 
-## Copie e cole no terminal para instalar os aplicativos:
+- Copie e cole no terminal para instalar os aplicativos:
 
 ```bash
 flatpak install flathub --assumeyes --noninteractive app.devsuite.Ptyxis be.alexandervanhee.gradia com.bitwarden.desktop com.calibre_ebook.calibre com.github.jeromerobert.pdfarranger com.github.neithern.g4music com.github.PintaProject.Pinta com.mattjakeman.ExtensionManager com.protonvpn.www com.vivaldi.Vivaldi com.warlordsoftwares.youtube-downloader-4ktube de.haeckerfelix.Fragments garden.jamie.Morphosis io.ente.auth io.github.celluloid_player.Celluloid io.github.dvlv.boxbuddyrs net.cozic.joplin_desktop org.freefilesync.FreeFileSync org.gnome.baobab org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.clocks org.gnome.Connections org.gnome.Evince org.gnome.font-viewer org.gnome.gitlab.YaLTeR.VideoTrimmer org.gnome.gThumb org.gnome.Logs org.gnome.Loupe org.gnome.SimpleScan org.gnome.Snapshot org.gnome.Solanum org.gnome.SoundRecorder org.gnome.TextEditor org.onlyoffice.desktopeditors org.telegram.desktop org.upscayl.Upscayl page.codeberg.libre_menu_editor.LibreMenuEditor
@@ -114,20 +116,20 @@ flatpak install flathub --assumeyes --noninteractive app.devsuite.Ptyxis be.alex
 
 
 
-## 5. Ajuste de Tema GTK para aplicações Flatpak
+## 3. Ajuste de Tema GTK para aplicações Flatpak
 
 
-1. instalar o tema
+- Instalar o tema
 ```bash
 sudo dnf install adw-gtk3-theme
 ```
 
-2. Aplique o tema
+- Aplicar o tema
 ```bash
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'
 ```
 
-3. Conclua a configuração
+- Concluir a configuração
 ```bash
 flatpak update
 ```
