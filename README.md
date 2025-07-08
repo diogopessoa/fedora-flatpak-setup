@@ -87,9 +87,9 @@ Passo a Passo:
    sudo ./fedora-flatpak-setup.sh
    ```
 
+Pronto! Se tudo deu certo você receberá a mensagem "✅ Processo concluído com sucesso!".
 
-
-## 🔨 Instalação Manual (opcional)
+# 🔨 Instalação Manual (opcional alternativa)
 
 ## 1. Desinstale os aplicativos RPM no GNOME Software 
 Abra o GNOME Software (Programas) e vá até 'Instalados', e remova os aplicativos RPM manualemente.
