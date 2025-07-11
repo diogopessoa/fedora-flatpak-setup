@@ -60,7 +60,7 @@ dnf remove -y \
 
 # Step 3 – Install Flatpak apps from Flathub
 echo -e "\n📦 Installing Flatpak applications from Flathub..."
-flatpak install flathub --assumeyes --noninteractive app.devsuite.Ptyxis be.alexandervanhee.gradia com.bitwarden.desktop com.calibre_ebook.calibre com.github.jeromerobert.pdfarranger com.github.neithern.g4music com.github.PintaProject.Pinta com.mattjakeman.ExtensionManager com.protonvpn.www com.vivaldi.Vivaldi com.warlordsoftwares.youtube-downloader-4ktube de.haeckerfelix.Fragments garden.jamie.Morphosis io.ente.auth io.github.celluloid_player.Celluloid io.github.dvlv.boxbuddyrs net.cozic.joplin_desktop org.freefilesync.FreeFileSync org.gnome.baobab org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.clocks org.gnome.Connections org.gnome.Evince org.gnome.font-viewer org.gnome.gitlab.YaLTeR.VideoTrimmer org.gnome.gThumb org.gnome.Logs org.gnome.Loupe org.gnome.SimpleScan org.gnome.Snapshot org.gnome.Solanum org.gnome.SoundRecorder org.gnome.TextEditor org.onlyoffice.desktopeditors org.telegram.desktop org.upscayl.Upscayl page.codeberg.libre_menu_editor.LibreMenuEditor "${apps[@]}"
+flatpak install flathub --assumeyes --noninteractive app.devsuite.Ptyxis com.mattjakeman.ExtensionManager net.nokyan.Resources org.gnome.baobab org.gnome.Boxes org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.clocks org.gnome.Contacts org.gnome.Decibels org.gnome.font-viewer org.gnome.Logs org.gnome.Loupe org.gnome.Maps org.gnome.Papers org.gnome.Showtime org.gnome.SimpleScan org.gnome.Snapshot org.gnome.TextEditor org.gnome.Weather page.tesk.Refine "${apps[@]}"
 
 # Step 4 – Apply GTK theme
 echo -e "\n🎨 Applying visual theme (adw-gtk3)..."
@@ -76,6 +76,6 @@ dnf clean all
 # Finalização
 echo ""
 echo "=============================================="
-echo "✅ Processo concluído com sucesso!"
-echo "🔁 Reinicie o sistema para aplicar todas as alterações."
+echo "✅ Process successfully completed!"
+echo "🔁 Restart the system to apply all changes."
 echo "=============================================="
