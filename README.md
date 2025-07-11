@@ -1,142 +1,142 @@
 # Fedora Flatpak Setup
 
-O tutorial a seguir substitui aplicações RPM do Fedora por Flatpak (Flathub), proporcionando melhor isolamento e atualizações mais consistentes.
+The following tutorial replaces Fedora RPM applications with Flatpak (Flathub), providing better isolation and more consistent updates.
 
-## 📦 Aplicações convertidas
+<table>
+  <tr>
+    <td><img src="https://fedoraproject.org/w/uploads/2/2d/Logo_fedoralogo.png" width="150" /></td>
+    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Flatpak_Logo.svg/640px-Flatpak_Logo.svg.png" width="150" /></td>
+    <td><img src="https://apps.gnome.org/assets/overview-illustration/disability-pride-month.svg" width="150" /></td>
+  </tr>
+</table>
+
+
+
+## 📦 Converted Applications
 
 * GNOME Core Apps (Calendar, Contacts, Maps, Weather, etc.)
 
-## 🔧 Requisitos
+## 🔧 Requirements
 
 * Fedora Workstation
 
 
-## Lista de aplicativos que será instalado:
+## List of applications that will be installed:
  
 
-| ID application                                   | Nome                               |
-|-------------------------------------------------|----------------------------------|
-| app.devsuite.Ptyxis                             | Ptyxis                           |
-| be.alexandervanhee.gradia                       | Gradia                          |
-| com.bitwarden.desktop                           | Bitwarden                      |
-| com.calibre_ebook.calibre                       | calibre                        |
-| com.github.jeromerobert.pdfarranger             | PDF Arranger                   |
-| com.github.neithern.g4music                     | Gapless                       |
-| com.github.PintaProject.Pinta                    | Pinta                         |
-| com.mattjakeman.ExtensionManager                | Gerenciador de Extensões       |
-| com.protonvpn.www                               | Proton VPN                    |
-| com.vivaldi.Vivaldi                             | Vivaldi                       |
-| com.warlordsoftwares.youtube-downloader-4ktube | 4KTUBE                        |
-| de.haeckerfelix.Fragments                       | Fragments                     |
-| garden.jamie.Morphosis                          | Morphosis                     |
-| io.ente.auth                                    | Ente Auth                     |
-| io.github.celluloid_player.Celluloid            | Reprodutor de Multimídia Celluloid |
-| io.github.dvlv.boxbuddyrs                       | BoxBuddy                      |
-| net.cozic.joplin_desktop                        | Joplin                        |
-| org.freefilesync.FreeFileSync                   | FreeFileSync                  |
-| org.gnome.baobab                                | Analisador de uso de disco    |
-| org.gnome.Calculator                            | Calculadora                   |
-| org.gnome.Calendar                              | Calendário                   |
-| org.gnome.Characters                            | Caracteres                   |
-| org.gnome.clocks                                | Relógios                     |
-| org.gnome.Connections                           | Conexões                     |
-| org.gnome.Evince                                | Visualizador de documentos   |
-| org.gnome.font-viewer                           | Fontes                       |
-| org.gnome.gitlab.YaLTeR.VideoTrimmer            | Video Trimmer                |
-| org.gnome.gThumb                                | Visualizador de imagens gThumb |
-| org.gnome.Logs                                  | Logs                         |
-| org.gnome.Loupe                                 | Visualizador de imagens      |
-| org.gnome.SimpleScan                            | Digitalizador de documentos  |
-| org.gnome.Snapshot                              | Câmera                       |
-| org.gnome.Solanum                               | Solanum                      |
-| org.gnome.SoundRecorder                         | Gravador de som              |
-| org.gnome.TextEditor                            | Editor de Texto              |
-| org.onlyoffice.desktopeditors                   | ONLYOFFICE Desktop Editors   |
-| org.telegram.desktop                            | Telegram                    |
-| org.upscayl.Upscayl                            | Upscayl                     |
-| page.codeberg.libre_menu_editor.LibreMenuEditor | Menu Principal               |
+
+| ID application                        | Name                  |
+|----------------------------------------|-----------------------|
+| org.gnome.Boxes                       | Boxes                 |
+| org.gnome.Calculator                   | Calculator            |
+| org.gnome.Calendar                     | Calendar              |
+| org.gnome.Characters                   | Characters            |
+| org.gnome.clocks                       | Clocks                |
+| org.gnome.Contacts                     | Contacts              |
+| org.gnome.Decibels                     | Audio Player          |
+| org.gnome.baobab                       | Disk Usage Analyzer   |
+| org.gnome.SimpleScan                   | Document Scanner      |
+| org.gnome.Papers                       | Document Viewer       |
+| org.gnome.font-viewer                  | Fonts                 |
+| org.gnome.Logs                         | Logs                  |
+| org.gnome.Loupe                        | Image Viewer          |
+| org.gnome.Maps                         | Maps                  |
+| net.nokyan.Resources                   | Resources             |
+| org.gnome.Showtime                     | Videos                |
+| org.gnome.TextEditor                   | Text Editor           |
+| app.devsuite.Ptyxis                    | Ptyxis                |
+| org.gnome.Weather                      | Weather               |
+| org.gnome.Snapshot                     | Screenshot            |
+| com.mattjakeman.ExtensionManager        | Extensions            |
+| page.tesk.Refine                       | Refine                |
 
 
-Essa lista poderá ser atualizada conforme mudar a base de aplicações [GNOME Core](https://apps.gnome.org/).
 
-### ✨ Recursos
+This list can be updated as it changes the application base of [GNOME Core](https://apps.gnome.org/).
 
-- Remove os aplicativos RPM
-- Instala os aplicativos Flatpak 
-- Repoitório Flathub como prioridade máxima
-- Tema ADW GTK3 para melhor integração visual com GNOME
+### ✨ Features
 
-## 🚀 Instalação automática (execute o script)
+- **Removes RPM applications and Installs Flatpak versions**  
+  Replaces RPM apps with Flatpak packages, ensuring better sandboxing and more frequent updates.
 
-Passo a Passo:
+- **Sets Flathub as the highest priority repository**  
+  Configures Flatpak to prioritize Flathub, the largest and most reliable source of GNOME apps.
 
-1. Baixe ou clone o script do GitHub:
+- **Applies the ADW GTK3 theme**  
+  Installs and enables the ADW GTK3 theme for a seamless and visually consistent experience with GNOME. 
+
+## 🚀 Automatic Installation (run the script)
+
+Step by step:
+
+1. Download or clone the script from GitHub:
    ```bash
-   wget https://raw.githubusercontent.com/diogopessoa/fedora-flatpak-setup/main/fedora-flatpak-setup.sh
+   git clone https://raw.githubusercontent.com/diogopessoa/fedora-flatpak-setup/main/fedora-flatpak-setup.git
+   cd fedora-flatpak-setup
    ```
 
-2. Torne-o executável:
+2. Make it executable:
 
    ```bash
    chmod +x fedora-flatpak-setup.sh
    ```
 
-3. Execute com privilégios de superusuário:
+3. Run with superuser privileges:
 
    ```bash
    sudo ./fedora-flatpak-setup.sh
    ```
 
-Pronto! Se tudo deu certo você receberá a mensagem "✅ Processo concluído com sucesso!".
+Done! If everything went well, you will receive the message "✅ Process completed successfully!".
 
-# 🔨 Instalação Manual (opcional alternativa)
+# 🔨 Manual Installation (alternative)
 
-## 1. Desinstalar os aplicativos RPM no GNOME Software 
-- Abra o GNOME Software (Programas)
-  - clique em 'Instalados'
-  - remova os aplicativos RPM manualemente
+## 1. Uninstall RPM applications in GNOME Software  
+- Open GNOME Software (Programs)  
+  - click on 'Installed'  
+  - manually remove the RPM applications 
 
-## 2. Verificar se o repositório Flathub está habilitado:
+## 2. Check if the Flathub repository is enabled:
 
-- Habilitar o Flathub
+- Enable Flathub
 ```bash
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-- Priorizar Flatpak (Flathub) para GNOME Software
+- Prioritize Flatpak (Flathub) for GNOME Software
 ```bash
 sudo flatpak remote-modify --system --prio=1 flathub
 ```
 
-- Copie e cole no terminal para instalar os aplicativos:
+- Copy and paste in the terminal to install the applications:
 
 ```bash
-flatpak install flathub --assumeyes --noninteractive app.devsuite.Ptyxis be.alexandervanhee.gradia com.bitwarden.desktop com.calibre_ebook.calibre com.github.jeromerobert.pdfarranger com.github.neithern.g4music com.github.PintaProject.Pinta com.mattjakeman.ExtensionManager com.protonvpn.www com.vivaldi.Vivaldi com.warlordsoftwares.youtube-downloader-4ktube de.haeckerfelix.Fragments garden.jamie.Morphosis io.ente.auth io.github.celluloid_player.Celluloid io.github.dvlv.boxbuddyrs net.cozic.joplin_desktop org.freefilesync.FreeFileSync org.gnome.baobab org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.clocks org.gnome.Connections org.gnome.Evince org.gnome.font-viewer org.gnome.gitlab.YaLTeR.VideoTrimmer org.gnome.gThumb org.gnome.Logs org.gnome.Loupe org.gnome.SimpleScan org.gnome.Snapshot org.gnome.Solanum org.gnome.SoundRecorder org.gnome.TextEditor org.onlyoffice.desktopeditors org.telegram.desktop org.upscayl.Upscayl page.codeberg.libre_menu_editor.LibreMenuEditor
+flatpak install flathub --assumeyes --noninteractive app.devsuite.Ptyxis com.mattjakeman.ExtensionManager net.nokyan.Resources org.gnome.baobab org.gnome.Boxes org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.clocks org.gnome.Contacts org.gnome.Decibels org.gnome.font-viewer org.gnome.Logs org.gnome.Loupe org.gnome.Maps org.gnome.Papers org.gnome.Showtime org.gnome.SimpleScan org.gnome.Snapshot org.gnome.TextEditor org.gnome.Weather page.tesk.Refine
 ```
 
 
 
-## 3. Ajuste de Tema GTK para aplicações Flatpak
+## 3. GTK Theme adjustment for Flatpak applications
 
 
-- Instalar o tema
+- Install the theme
 ```bash
 sudo dnf install adw-gtk3-theme
 ```
 
-- Aplicar o tema
+- Apply the theme
 ```bash
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'
 ```
 
-- Concluir a configuração
+- Finish the setup
 ```bash
 flatpak update
 ```
 
-É isso!
+That's it!
 
-## 📄 Licença
+## 📄 License
 
-[Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed.pt-br) — livre para uso, modificação e distribuição.
+[Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed.pt-br) — free for use, modification and distribution..
 
