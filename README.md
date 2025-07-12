@@ -70,18 +70,19 @@ This list can be updated as it changes the application base of [GNOME Core](http
 Step by step:
 
 1. Download or clone the script from GitHub:
+
    ```bash
-   git clone https://raw.githubusercontent.com/diogopessoa/fedora-flatpak-setup/main/fedora-flatpak-setup.git
-   cd fedora-flatpak-setup
+   cd ~ Downloads/fedora-flatpak-setup
+   wget https://raw.githubusercontent.com/diogopessoa/fedora-flatpak-setup/main/fedora-flatpak-setup.sh
    ```
 
-2. Make it executable:
+3. Make it executable:
 
    ```bash
    chmod +x fedora-flatpak-setup.sh
    ```
 
-3. Run with superuser privileges:
+4. Run with superuser privileges:
 
    ```bash
    sudo ./fedora-flatpak-setup.sh
