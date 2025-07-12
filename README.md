@@ -72,7 +72,7 @@ Step by step:
 1. Download or clone the script from GitHub:
 
    ```bash
-   cd ~ Downloads/fedora-flatpak-setup
+   cd ~/Downloads
    wget https://raw.githubusercontent.com/diogopessoa/fedora-flatpak-setup/main/fedora-flatpak-setup.sh
    ```
 
