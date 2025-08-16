@@ -47,8 +47,10 @@ The following tutorial replaces Fedora RPM applications with Flatpak (Flathub), 
 | app.devsuite.Ptyxis                    | Ptyxis                |
 | org.gnome.Weather                      | Weather               |
 | org.gnome.Snapshot                     | Screenshot            |
+| EXTRA APPS                             | ----------------------|
 | com.mattjakeman.ExtensionManager        | Extensions            |
-| page.tesk.Refine                       | Refine                |
+| page.tesk.Refine                       | Refine (tweaks)       |
+| page.codeberg.libre_menu_editor.LibreMenuEditor | Edit Menu    |
 
 
 
