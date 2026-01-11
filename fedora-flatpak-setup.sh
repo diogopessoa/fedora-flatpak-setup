@@ -43,6 +43,7 @@ flatpak remote-modify --system --prio=1 flathub
 # Step 2 – Remove default RPM apps (ignore missing)
 echo -e "\n🧹 Removing default RPM applications..."
 dnf remove -y \
+    firefox \
     gnome-calendar \
     gnome-contacts \
     gnome-maps \
@@ -60,7 +61,7 @@ dnf remove -y \
 
 # Step 3 – Install Flatpak apps from Flathub
 echo -e "\n📦 Installing Flatpak applications from Flathub..."
-flatpak install flathub --assumeyes --noninteractive app.devsuite.Ptyxis com.mattjakeman.ExtensionManager net.nokyan.Resources org.gnome.baobab org.gnome.Boxes org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.clocks org.gnome.Contacts org.gnome.Decibels org.gnome.font-viewer org.gnome.Logs org.gnome.Loupe org.gnome.Maps org.gnome.Papers org.gnome.Showtime org.gnome.SimpleScan org.gnome.Snapshot org.gnome.TextEditor org.gnome.Weather page.tesk.Refine "${apps[@]}"
+flatpak install flathub --assumeyes --noninteractive com.brave.Browser app.devsuite.Ptyxis com.mattjakeman.ExtensionManager net.nokyan.Resources org.gnome.baobab org.gnome.Boxes org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.clocks org.gnome.Contacts org.gnome.Decibels org.gnome.font-viewer org.gnome.Logs org.gnome.Loupe org.gnome.Maps org.gnome.Papers org.gnome.Showtime org.gnome.SimpleScan org.gnome.Snapshot org.gnome.TextEditor org.gnome.Weather page.tesk.Refine "${apps[@]}"
 
 # Step 4 – Apply GTK theme
 echo -e "\n🎨 Applying visual theme (adw-gtk3)..."
