@@ -1,4 +1,4 @@
-# Fedora Flatpak Setup
+# Script Pós-install Fedora Workstation
 
 The following tutorial replaces Fedora RPM applications with Flatpak (Flathub), providing better isolation and more consistent updates.
 
@@ -91,53 +91,6 @@ Step by step:
    ```
 
 Done! If everything went well, you will receive the message "✅ Process completed successfully!".
-
-# 🔨 Manual Installation (alternative)
-
-## 1. Uninstall RPM applications in GNOME Software  
-- Open GNOME Software (Programs)  
-  - click on 'Installed'  
-  - manually remove the RPM applications 
-
-## 2. Check if the Flathub repository is enabled:
-
-- Enable Flathub
-```bash
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-```
-
-- Prioritize Flatpak (Flathub) for GNOME Software
-```bash
-sudo flatpak remote-modify --system --prio=1 flathub
-```
-
-- Copy and paste in the terminal to install the applications:
-
-```bash
-flatpak install flathub --assumeyes --noninteractive app.devsuite.Ptyxis com.mattjakeman.ExtensionManager net.nokyan.Resources org.gnome.baobab org.gnome.Boxes org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.clocks org.gnome.Contacts org.gnome.Decibels org.gnome.font-viewer org.gnome.Logs org.gnome.Loupe org.gnome.Maps org.gnome.Papers org.gnome.Showtime org.gnome.SimpleScan org.gnome.Snapshot org.gnome.TextEditor org.gnome.Weather page.tesk.Refine
-```
-
-
-
-## 3. GTK Theme adjustment for Flatpak applications
-
-
-- Install the theme
-```bash
-sudo dnf install adw-gtk3-theme
-```
-
-- Apply the theme
-```bash
-gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'
-```
-
-- Finish the setup
-```bash
-flatpak update
-```
-
-That's it!
 
 ## 📄 License
 
