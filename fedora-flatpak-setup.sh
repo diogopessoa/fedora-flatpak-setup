@@ -140,6 +140,7 @@ lista_apps=(
   com.mattjakeman.ExtensionManager
   com.brave.Browser
   page.tesk.Refine
+  org.localsend.localsend_app
   page.codeberg.libre_menu_editor.LibreMenuEditor
 )
 
