@@ -1,11 +1,10 @@
-# Script Pós-install Fedora Workstation
+# Script Post-install Fedora Workstation
 
 The following tutorial replaces Fedora RPM applications with Flatpak (Flathub), providing better isolation and more consistent updates.
 
 <table>
   <tr>
     <td><img src="https://fedoraproject.org/w/uploads/2/2d/Logo_fedoralogo.png" width="150" /></td>
-    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Flatpak_Logo.svg/640px-Flatpak_Logo.svg.png" width="150" /></td>
     <td><img src="https://apps.gnome.org/assets/overview-illustration/disability-pride-month.svg" width="150" /></td>
   </tr>
 </table>
